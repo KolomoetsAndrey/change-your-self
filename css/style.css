@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700&subset=cyrillic,cyrillic-ext,latin-ext");
+/*
 .container {
   margin-right: auto;
   margin-left: auto;
@@ -3592,7 +3593,7 @@ a.text-dark:focus, a.text-dark:hover {
 
 .embed-responsive-1by1::before {
   padding-top: 100%; }
-
+*/
 .button-transparent {
   display: inline-block;
   padding: 10px 20px;
@@ -3659,7 +3660,7 @@ a.text-dark:focus, a.text-dark:hover {
     content: "";
     display: block;
     position: absolute;
-    bottom: 0;
+    bottom: -1px;
     left: 0;
     right: 0;
     height: 30px;
@@ -3730,7 +3731,7 @@ header {
   left: 0;
   right: 0;
   z-index: 99999;
-  padding-top: 40px;
+/*  padding-top: 40px; */
   height: 60px;
   -webkit-transition: all 0.6s ease;
   transition: all 0.6s ease; }
@@ -4549,6 +4550,16 @@ footer {
   flex-direction: row;
 }
 
+.block_title {
+  text-transform: uppercase;
+  font-size: 3rem;
+  font-weight: bold;
+  background: linear-gradient(90deg, #8373cf, #47cec9);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  width: max-content;
+  margin: 0 auto;
+}
 
 
 .error::-webkit-input-placeholder {color:#c0392b; font-weight: 700;}
@@ -4584,18 +4595,69 @@ footer {
     transform: none !important;
     /*CSS animations */
     -webkit-animation: none !important;
-    animation: none !important; } }
+    animation: none !important; } 
+    #questions-form .button-main[type="submit"] {
+      width: 300px;
+    }
+  
+    .s-about p, .s-about2 p {
+      font-size: 2rem;
+      line-height: 2.5rem;
+    }
+    .s-about h3, .s-about2 h3 {
+      padding-top: 40px;
+      font-size: 2.5rem;
+      padding-bottom: 15px;
+    }
+    .steps-description {
+      margin: 10px 0 15px;
+      font-size: 2.5rem;
+      line-height: 2.5rem;
+    }
+    .steps-subdescription {
+      font-size: 1.5rem;
+    }
+    .steps .step h4 {
+      font-size: 1rem;
+    }
+    .steps .step p {
+      font-size: 1rem;
+      line-height: 1.5rem;
+    }
+    .how-to-start-description {
+      font-size: 2rem;
+    }
+    .s-how-to-start h5 {
+      align-items: center;
+      display: flex;
+    }
+    .button-main {
+      font-size: 2rem;
+    }
+    .s-how-to-start .text {
+      max-width: 70%;
+      font-size: 2rem;
+    }
+    .s-presents .presents-description {
+      font-size: 1.5rem;
+      line-height: 2rem;
+    }
+  
+  }
+
+    
   
   header {
     height: 100px;
     align-items: center;
     display: flex;
+    padding-top: 40px;
   }
 
 /* Extra Small Devices, Phones */
 @media (max-width: 576px) {
   .s-head .container {
-    height: 190vh;
+    height: 240vh;
   }
   .logo1 {
     height: 75px;
@@ -4627,7 +4689,7 @@ footer {
   }
   .s-about p, .s-about2 p {
     font-size: 3rem;
-    line-height: 3rem;
+    line-height: 4rem;
   }
   .steps-description {
     font-size: 3.5rem;
@@ -4658,16 +4720,16 @@ footer {
   }
   #questions-form label {
     margin: 15px auto;
-    width: 500px;
+    width: 900px;
     height: 100px;
   }
   #questions-form label input {
-    width: 458px;
-    font-size: 3.4rem;
+    width: 844px;
+    font-size: 2.5rem;
   }
   #questions-form .button-main[type="submit"] {
     margin: 15px auto;
-    width: 552px;
+    width: 900px;
   }
   .how-to-start-description {
     font-size: 3rem;
@@ -4684,12 +4746,12 @@ footer {
   .s-how-to-start .text {
     max-width: 90%;
     font-size: 3rem;
-    line-height: 3rem;
+    line-height: 4rem;
   }
   .s-presents .presents-description {
     max-width: 90%;
     font-size: 3rem;
-    line-height: 3rem;
+    line-height: 4rem;
   }
   .s-presents .presents {
     flex-direction: column;
@@ -4706,24 +4768,60 @@ footer {
     border-right: 1px solid transparent;
   }
   .f-menu ul li a {
-    font-size: 1.5rem;
+    font-size: 2.5rem;
   }
   .f-copyright {
     font-size: 2.5rem;
   }
   .social {
     justify-content: center;
+    padding: 0;
   }
   .sidepanel .themenu a {
     font-size: 3rem;
     text-align: center;
     display: block;
-
+  }
+  .block_title {
+    font-size: 4rem;
+    margin-bottom: 15px;
+  }
+  .s-presents .present-place-1 {
+    height: 400px;
+    width: 900px;
+  }
+  .s-presents .present-place-number {
+    font-size: 4rem;
+  }
+  .s-presents .present-place-icon {
+    width: 150px;
+    height: 150px;
+  }
+  .s-presents .present-place-1 .present-place-description {
+    font-size: 2.5rem;
+  }
+  .s-presents .present-place-2 {
+    height: 400px;
+    width: 900px;
+    order: -1;
+  }
+  .s-presents .present-place-3 {
+    height: 400px;
+    width: 900px;
+  }
+  .s-presents .present-place-3 .present-place-description {
+    font-size: 2.5rem;
   }
 }
 /* Extra Small Devices, Phones */
 @media (max-width: 480px) {
-  /* */ }
+  .s-head .container {
+    height: 300vh;
+  }  
+}
 /* Custom, iPhone Retina */
 @media (max-width: 320px) {
-  /* */ }
+  .s-head .container {
+    height: 390vh;
+  }  
+}
