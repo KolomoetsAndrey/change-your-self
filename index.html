@@ -11,10 +11,29 @@
 	<link rel="shortcut icon" href="img/favicon/favicon.png" type="image/x-icon">
 
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width">
+	<meta name="viewport" content="width=device-width">
 	<style>
-		.loader {position: fixed;left: 0;top: 0;right: 0;bottom: 0;background: #222222;z-index: 999}
-    	.loader .loader_inner {position: absolute;left: 0;top: 0;z-index: 999;width: 100%;height: 100%;overflow: visible;background: #fff}
+		.loader {
+			position: fixed;
+			left: 0;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			background: #222222;
+			z-index: 999
+		}
+
+		.loader .loader_inner {
+			position: absolute;
+			left: 0;
+			top: 0;
+			z-index: 999;
+			width: 100%;
+			height: 100%;
+			overflow: visible;
+			background: #fff
+		}
+
 	</style>
 
 	<link rel="stylesheet" href="css/bootstrap.min.css">
@@ -22,16 +41,21 @@
 	<link rel="stylesheet" href="libs/fancybox3/jquery.fancybox.min.css">
 
 	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/sfdevelop.css">
 
-<!-- Global Site Tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-106555581-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments)};
-  gtag('js', new Date());
+	<!-- Global Site Tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-106555581-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
 
-  gtag('config', 'UA-106555581-1');
-</script>
+		function gtag() {
+			dataLayer.push(arguments)
+		};
+		gtag('js', new Date());
+
+		gtag('config', 'UA-106555581-1');
+
+	</script>
 
 
 </head>
@@ -41,27 +65,409 @@
 	<div class="site">
 
 
-	<div class="loader">
-		<div class="loader_inner"></div>
-	</div>
+		<div class="loader">
+			<div class="loader_inner"></div>
+		</div>
 
-	<header>
-		<nav class="container">
-			<div class="row align-items-center">
-				<div class="col d-flex">
-					<button type="button" name="button" id="menu-toggler" onclick="openNav()"><img src="img/menu-button.png" alt="МЕНЮ"></button>
-				</div>
-				<div class="col text-center">
-					<a href="/">
-						<img class="logo1" src="img/logo_new_white.png" alt="Coral Club">
-					</a>
-				</div>
+		<header>
+			<nav class="container">
+				<div class="row align-items-center">
+					<div class="col d-flex">
+						<button type="button" name="button" id="menu-toggler" onclick="openNav()"><img src="img/menu-button.png" alt="МЕНЮ"></button>
+					</div>
+					<div class="col text-center">
+						<a href="/">
+							<img class="logo1" src="img/logo_new_white.png" alt="Coral Club">
+						</a>
+					</div>
+					<div class="col text-right">
+						<a href="avtoris.html" class="button-main sf-button button-main-head scroll-button">
+							Вход
+						</a>
+					</div>
+					<!--
 				<div class="col text-right">
-					<!--<a href="#questions-form-popup" data-fancybox class="button-transparent">Заказать звонок</a>-->
+					<a href="#questions-form-popup" data-fancybox class="button-transparent">Заказать звонок</a>
 				</div> 
-				<div id="mySidepanel" class="sidepanel">
-					<ul class="themenu">
-						<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+-->
+					<div id="mySidepanel" class="sidepanel">
+						<ul class="themenu">
+							<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+							<li><a href="#s-head" class="scroll-button">Главная</a></li>
+							<li><a href="#s-about" class="scroll-button">О проекте</a></li>
+							<li><a href="#s-steps" class="scroll-button">Выгоды</a></li>
+							<li><a href="#s-results" class="scroll-button">Результаты</a></li>
+							<li><a href="#s-about2" class="scroll-button">Видео отзывы</a></li>
+							<li><a href="#s-how-to-start" class="scroll-button">Как начать?</a></li>
+							<li><a href="#s-presents" class="scroll-button">Призы</a></li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+		</header>
+		<main>
+			<section id="s-head" class="s-head decor">
+				<div class="container d-flex flex-column justify-content-center align-items-center">
+					<h2 class="h1-subtitle">МЕЖДУНАРОДНЫЙ ПРОЕКТ</h2>
+					<h1>«ИЗМЕНИ СЕБЯ»</h1>
+					<h2 class="h1-subtitle-2">Ваш реальный шанс стать лучше уже сегодня!</h2>
+					<a href="#s-about" class="button-main button-main-head scroll-button">Узнать больше</a>
+					<div class="scroll-icon mb-0 mt-auto"></div>
+				</div>
+			</section>
+
+			<section id="s-about" class="s-about">
+				<div class="container">
+					<h2 class="text-center my-0 block_title">О проекте</h2>
+					<div class="row ">
+						<div class="col-lg-5 d-flex align-items-center">
+							<div class="embed-responsive embed-responsive-16by9">
+								<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/ojyrD7EYK-A" frameborder="0" allowfullscreen></iframe>
+							</div>
+							<!-- <img src="img/about-img.png" alt="О ПРОЕКТЕ" class="img-fluid"> -->
+						</div>
+						<div class="col-lg-6 d-flex flex-column justify-content-center">
+							<div>
+								<h3>Измени себя сейчас!</h3>
+								<p>
+									Проект «Измени себя» - это универсальная программа по оздоровлению для
+									каждого человека! Программа существует более <strong>18 лет</strong>, в ней уже приняли
+									участие больше <strong>100.000 человек по всему миру</strong>.
+								</p>
+								<p>
+									«Измени себя» - это не просто оздоровительная программа, <strong>это стиль жизни</strong>.
+									Стиль здоровых и счастливых людей.
+								</p>
+								<p>
+									Участвуя в программе, вы не только решаете свои задачи по здоровью, вы
+									месяц за месяцем восстанавливаете свое здоровье с любого состояния и
+									продолжаете <strong>жить без аптек и врачей</strong> в будущем
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section id="s-steps" class="s-steps decor decor-2">
+				<div class="container text-center">
+					<h2 class="my-0">Почему 90 дней?</h2>
+					<div class="points">
+						<div></div>
+						<div></div>
+						<div></div>
+					</div>
+					<p class="steps-description">За 90 дней на 100% восстанавливаем здоровье на клеточном уровне</p>
+					<p class="steps-subdescription">Ваш организм начинает работать «как часы». Ежедневный Детокс организма и поддержание чистоты внутренней среды</p>
+					<a href="javascript:;" class="button-main button-main-steps">Участие в Проекте «Измени себя» приведет Вас к</a>
+					<div class="steps d-flex justify-content-center">
+						<div class="step">
+							<h4>Здоровью</h4>
+							<div class="step-check"><span><span></span></span></div>
+							<p>ногтей, кожи, к свежему дыханию, блеску в глазах</p>
+						</div>
+						<div class="step">
+							<h4>Нормализации</h4>
+							<div class="step-check"><span><span></span></span></div>
+							<p>сна, обретению устойчивости к стресам</p>
+						</div>
+						<div class="step">
+							<h4>Повышению</h4>
+							<div class="step-check"><span><span></span></span></div>
+							<p>эластичности мышц, восстановлению структуры костной и хрящевой тканей</p>
+						</div>
+						<div class="step">
+							<h4>12 константам</h4>
+							<div class="step-check"><span><span></span></span></div>
+							<p>вашего организма. Нормализуются артериальное давление, гемоглобин, сахар</p>
+						</div>
+						<div class="step">
+							<h4>Стабилизации</h4>
+							<div class="step-check"><span><span></span></span></div>
+							<p>веса вашего тела, Также подтянутость кожи гарантирована</p>
+						</div>
+						<div class="step">
+							<h4>Становлению</h4>
+							<div class="step-check"><span><span></span></span></div>
+							<p>большого резерва сил организма</p>
+						</div>
+						<div class="step">
+							<h4>Возобновлению</h4>
+							<div class="step-check"><span><span></span></span></div>
+							<p>женского цикла и мужского здоровья</p>
+						</div>
+					</div>
+					<div class="steps-info-after">
+						<p>
+							Данная программа для тех, кто понимает, что Наше здоровье -<br>
+							это Наш ежедневный выбор!
+						</p>
+					</div>
+				</div>
+			</section>
+			<section id="s-questions" class="s-questions decor">
+				<div class="container">
+					<h2 class="text-center block_title">Возникли вопросы?</h2>
+					<form action="sendmessage.php" id="questions-form" method="post">
+						<div class="d-flex justify-content-between form_block">
+							<label class="name"><input type="text" placeholder="Ваше имя..." name="name"></label>
+							<label class="surname"><input type="text" placeholder="Ваша фамилия..." name="surname"></label>
+							<label class="city"><input type="text" placeholder="Ваш город..." name="city"></label>
+						</div>
+						<div class="d-flex justify-content-between form_block">
+							<label class="phone"><input type="tel" placeholder="Ваш телефон..." name="phone"></label>
+							<label class="email"><input type="email" placeholder="Ваш e-mail..." name="email"></label>
+							<button type="submit" name="button" class="button-main">Получить консультацию</button>
+						</div>
+					</form>
+				</div>
+			</section>
+			<section id="s-results" class="s-results decor decor-2">
+				<div class="container">
+					<h2 class="text-center block_title">Результаты после программы</h2>
+					<div id="results-slider" class="results-slider owl-carousel mx-auto">
+
+						<div class="slider-image-wrap">
+
+							<img src="img/res/01.jpg" alt="Фото результатов">
+
+						</div>
+						<div class="slider-image-wrap">
+							<img src="img/res/02.jpg" alt="Фото результатов">
+						</div>
+						<div class="slider-image-wrap">
+							<img src="img/res/1.jpg" alt="Фото результатов">
+						</div>
+						<div class="slider-image-wrap">
+							<img src="img/res/2.jpg" alt="Фото результатов">
+						</div>
+						<div class="slider-image-wrap">
+							<img src="img/res/3.jpg" alt="Фото результатов">
+						</div>
+						<div class="slider-image-wrap">
+							<img src="img/res/4.jpg" alt="Фото результатов">
+						</div>
+						<div class="slider-image-wrap">
+							<img src="img/res/5.jpg" alt="Фото результатов">
+						</div>
+						<div class="slider-image-wrap">
+							<img src="img/res/6.jpg" alt="Фото результатов">
+						</div>
+						<div class="slider-image-wrap">
+							<img src="img/res/7.jpg" alt="Фото результатов">
+						</div>
+						<div class="slider-image-wrap">
+							<img src="img/res/8.jpg" alt="Фото результатов">
+						</div>
+						<div class="slider-image-wrap">
+							<img src="img/res/9.jpg" alt="Фото результатов">
+						</div>
+						<div class="slider-image-wrap">
+							<img src="img/res/10.jpg" alt="Фото результатов">
+						</div>
+						<div class="slider-image-wrap">
+							<img src="img/res/11.jpg" alt="Фото результатов">
+						</div>
+						<div class="slider-image-wrap">
+							<img src="img/res/12.jpg" alt="Фото результатов">
+						</div>
+						<div class="slider-image-wrap">
+							<img src="img/res/13.jpg" alt="Фото результатов">
+						</div>
+						<div class="slider-image-wrap">
+							<img src="img/res/14.jpg" alt="Фото результатов">
+						</div>
+						<div class="slider-image-wrap">
+							<img src="img/res/15.jpg" alt="Фото результатов">
+						</div>
+						<div class="slider-image-wrap">
+							<img src="img/res/16.jpg" alt="Фото результатов">
+						</div>
+						<div class="slider-image-wrap">
+							<img src="img/res/17.jpg" alt="Фото результатов">
+						</div>
+						<div class="slider-image-wrap">
+							<img src="img/res/18.jpg" alt="Фото результатов">
+						</div>
+						<div class="slider-image-wrap">
+							<img src="img/res/19.jpg" alt="Фото результатов">
+						</div>
+						<div class="slider-image-wrap">
+							<img src="img/res/20.jpg" alt="Фото результатов">
+						</div>
+						<div class="slider-image-wrap">
+							<img src="img/res/21.jpg" alt="Фото результатов">
+						</div>
+						<div class="slider-image-wrap">
+							<img src="img/res/22.jpg" alt="Фото результатов">
+						</div>
+						<div class="slider-image-wrap">
+							<img src="img/res/23.jpg" alt="Фото результатов">
+						</div>
+						<div class="slider-image-wrap">
+							<img src="img/res/24.jpg" alt="Фото результатов">
+						</div>
+						<div class="slider-image-wrap">
+							<img src="img/res/25.jpg" alt="Фото результатов">
+						</div>
+
+						<div class="slider-image-wrap">
+							<img src="img/res/27.jpg" alt="Фото результатов">
+						</div>
+						<div class="slider-image-wrap">
+							<img src="img/res/28.jpg" alt="Фото результатов">
+						</div>
+						<div class="slider-image-wrap">
+							<img src="img/res/29.jpg" alt="Фото результатов">
+						</div>
+						<div class="slider-image-wrap">
+							<img src="img/res/30.jpg" alt="Фото результатов">
+						</div>
+						<div class="slider-image-wrap">
+							<img src="img/res/31.jpg" alt="Фото результатов">
+						</div>
+						<div class="slider-image-wrap">
+							<img src="img/res/32.jpg" alt="Фото результатов">
+						</div>
+					</div>
+					<div id="results-slider-counter" class="mt-4 text-center">
+						<span id="results-slider-counter-current"></span>
+						<span id="results-slider-counter-count"></span>
+					</div>
+				</div>
+			</section>
+
+
+
+			<section id="s-about2" class="s-about2">
+				<div class="container">
+					<h2 class="text-center my-0 block_title">О проекте</h2>
+					<div class="row ">
+						<div class="col-lg-5 d-flex align-items-center">
+							<div class="embed-responsive embed-responsive-16by9">
+								<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/FrVVLxViYSI" frameborder="0" allowfullscreen></iframe>
+							</div>
+							<!-- <img src="img/about-img.png" alt="О ПРОЕКТЕ" class="img-fluid"> -->
+						</div>
+						<div class="col-lg-6 d-flex flex-column justify-content-center">
+							<div>
+								<h3>Константин Тарнопольский</h3>
+								<p>
+									<b>Цель: <strong>набор массы</strong>.<p>
+											Занятое место: <strong>1 место</strong>.</p></b>
+								</p>
+								<p>
+									«Измени себя» - это не просто оздоровительная программа, <strong>это стиль жизни</strong>.
+									Стиль здоровых и счастливых людей.
+								</p>
+								<p>
+									Участвуя в программе, вы не только решаете свои задачи по здоровью, вы
+									месяц за месяцем восстанавливаете свое здоровье с любого состояния и
+									продолжаете <strong>жить без аптек и врачей</strong> в будущем
+								</p>
+							</div>
+						</div>
+
+
+
+					</div>
+				</div>
+			</section>
+
+
+
+
+
+			<section id="s-how-to-start" class="s-how-to-start">
+				<div class="container">
+					<h2 class="text-center block_title">Результаты после программы</h2>
+					<p class="how-to-start-description text-center">Как стать участником проекта «Измени себя»?</p>
+					<div class="row no-gutters d-flex align-items-center">
+						<div class="col-lg-5 col-12 d-flex">
+							<span class="counter">01</span>
+							<h5>Заполнить форму</h5>
+						</div>
+						<div class="col-lg-2 col-12">
+							<div class="how-to-start-icons how-to-start-icons-1 mx-auto"></div>
+						</div>
+						<div class="col-lg-5 col-12 text-center">
+							<a href="#questions-form-popup" data-fancybox class="button-main button-main-how-to">Получить консультацию</a>
+						</div>
+					</div>
+					<div class="row no-gutters d-flex align-items-center">
+						<div class="col-lg-5 col-12 d-flex">
+							<span class="counter">02</span>
+							<h5>Получите личного консультанта</h5>
+						</div>
+						<div class="col-lg-2 col-12">
+							<div class="how-to-start-icons how-to-start-icons-2 mx-auto"></div>
+						</div>
+						<div class="col-lg-5 col-12">
+							<p class="text">После успешной регистрации вы получаете личного консультанта, который будет помогать Вам на каждом этапе проекта «Измени себя»</p>
+						</div>
+					</div>
+					<div class="row no-gutters d-flex align-items-center">
+						<div class="col-lg-5 col-12 d-flex">
+							<span class="counter">03</span>
+							<h5>Изучите ваш личный план действий</h5>
+						</div>
+						<div class="col-lg-2 col-12">
+							<div class="how-to-start-icons how-to-start-icons-3 mx-auto"></div>
+						</div>
+						<div class="col-lg-5 col-12">
+							<p class="text">Специально под Ваши задачи и цели будет разработан план действий, и программа питания, используя которую вы достигните своих целей</p>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section id="s-presents" class="s-presents decor-2">
+				<div class="container text-center">
+					<h2 class="text-center block_title">Внимание призы!</h2>
+					<p class="presents-description mx-auto text-center">Каждый участник проекта участвует в розыгрыше ценных призов для своей новой жизни</p>
+					<div class="presents d-flex justify-content-center align-items-end">
+						<div class="present-place present-place-1">
+							<div class="present-place-icon"></div>
+							<h6 class="present-place-description">300$</h6>
+							<h6 class="present-place-number">2-е место</h6>
+						</div>
+						<div class="present-place present-place-2">
+							<div class="present-place-icon"></div>
+							<h6 class="present-place-description">600$</h6>
+							<h6 class="present-place-number">1-е место</h6>
+						</div>
+						<div class="present-place present-place-3">
+							<div class="present-place-icon"></div>
+							<h6 class="present-place-description">200$</h6>
+							<h6 class="present-place-number">3-е место</h6>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+
+		<footer>
+			<div class="container">
+				<div class="row align-items-center flogo">
+					<div class="col-lg-3 col-12">
+						<div class="f-phones-list-wrap">
+							<!--<span id="f-phones-toggle"></span>
+						 <ul id="f-phones-list">
+							<li><a href="mailto:info@change-yourself.com">info@change-your-self.com</a></li>
+							<li><a href="tel:380983287171">+38 (098) 328 - 71 - 71</a></li> 
+						</ul>-->
+
+						</div>
+					</div>
+					<div class="col-lg-3 col-12 text-center">
+						<a href="/"><img class="logo1" src="img/logo_new_white.png" alt="Coral Club"></a>
+					</div>
+					<div class="col-lg-3 col-12 text-right social">
+						<a href="https://telegram.org/"><img src="img/telegram.png" alt="Telegram"></a>
+						<a href="https://www.facebook.com/"><img src="img/facebook.png" alt="Facebook"></a>
+					</div>
+				</div>
+				<nav class="f-menu">
+					<ul class="d-flex justify-content-center">
 						<li><a href="#s-head" class="scroll-button">Главная</a></li>
 						<li><a href="#s-about" class="scroll-button">О проекте</a></li>
 						<li><a href="#s-steps" class="scroll-button">Выгоды</a></li>
@@ -70,387 +476,12 @@
 						<li><a href="#s-how-to-start" class="scroll-button">Как начать?</a></li>
 						<li><a href="#s-presents" class="scroll-button">Призы</a></li>
 					</ul>
+				</nav>
+				<div class="f-copyright text-center">
+					"change-your-self.com" является сайтом независимого дистрибьютора coralclub
 				</div>
 			</div>
-		</nav>
-	</header>
-	<main>
-		<section id="s-head" class="s-head decor">
-			<div class="container d-flex flex-column justify-content-center align-items-center">
-				<h2 class="h1-subtitle">МЕЖДУНАРОДНЫЙ ПРОЕКТ</h2>
-				<h1>«ИЗМЕНИ СЕБЯ»</h1>
-				<h2 class="h1-subtitle-2">Ваш реальный шанс стать лучше уже сегодня!</h2>
-				<a href="#s-about" class="button-main button-main-head scroll-button">Узнать больше</a>
-				<div class="scroll-icon mb-0 mt-auto"></div>
-			</div>
-		</section>
-		
-		<section id="s-about" class="s-about">
-			<div class="container">
-				<h2 class="text-center my-0 block_title">О проекте</h2>
-				<div class="row ">
-					<div class="col-lg-5 d-flex align-items-center">
-						<div class="embed-responsive embed-responsive-16by9">
-							<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/ojyrD7EYK-A" frameborder="0" allowfullscreen></iframe>
-						</div>
-						<!-- <img src="img/about-img.png" alt="О ПРОЕКТЕ" class="img-fluid"> -->
-					</div>
-					<div class="col-lg-6 d-flex flex-column justify-content-center">
-						<div>
-							<h3>Измени себя сейчас!</h3>
-							<p>
-								Проект «Измени себя» - это универсальная программа по оздоровлению для
-								каждого человека! Программа существует более <strong>18 лет</strong>, в ней уже приняли
-								участие больше <strong>100.000 человек по всему миру</strong>.
-							</p>
-							<p>
-								«Измени себя» - это не просто оздоровительная программа, <strong>это стиль жизни</strong>.
-								Стиль здоровых и счастливых людей.
-							</p>
-							<p>
-								Участвуя в программе, вы не только решаете свои задачи по здоровью, вы
-								месяц за месяцем восстанавливаете свое здоровье с любого состояния и
-								продолжаете <strong>жить без аптек и врачей</strong> в будущем
-							</p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-		
-		<section id="s-steps" class="s-steps decor decor-2">
-			<div class="container text-center">
-				<h2 class="my-0">Почему 90 дней?</h2>
-				<div class="points">
-					<div></div>
-					<div></div>
-					<div></div>
-				</div>
-				<p class="steps-description">За 90 дней на 100% восстанавливаем здоровье на клеточном уровне</p>
-				<p class="steps-subdescription">Ваш организм начинает работать «как часы». Ежедневный Детокс организма и поддержание чистоты внутренней среды</p>
-				<a href="javascript:;" class="button-main button-main-steps">Участие в Проекте «Измени себя» приведет Вас к</a>
-				<div class="steps d-flex justify-content-center">
-					<div class="step">
-						<h4>Здоровью</h4>
-						<div class="step-check"><span><span></span></span></div>
-						<p>ногтей, кожи, к свежему дыханию, блеску в глазах</p>
-					</div>
-					<div class="step">
-						<h4>Нормализации</h4>
-						<div class="step-check"><span><span></span></span></div>
-						<p>сна, обретению устойчивости к стресам</p>
-					</div>
-					<div class="step">
-						<h4>Повышению</h4>
-						<div class="step-check"><span><span></span></span></div>
-						<p>эластичности мышц, восстановлению структуры костной и хрящевой тканей</p>
-					</div>
-					<div class="step">
-						<h4>12 константам</h4>
-						<div class="step-check"><span><span></span></span></div>
-						<p>вашего организма. Нормализуются артериальное давление, гемоглобин, сахар</p>
-					</div>
-					<div class="step">
-						<h4>Стабилизации</h4>
-						<div class="step-check"><span><span></span></span></div>
-						<p>веса вашего тела, Также подтянутость кожи гарантирована</p>
-					</div>
-					<div class="step">
-						<h4>Становлению</h4>
-						<div class="step-check"><span><span></span></span></div>
-						<p>большого резерва сил организма</p>
-					</div>
-					<div class="step">
-						<h4>Возобновлению</h4>
-						<div class="step-check"><span><span></span></span></div>
-						<p>женского цикла и мужского здоровья</p>
-					</div>
-				</div>
-				<div class="steps-info-after">
-					<p>
-						Данная программа для тех, кто понимает, что Наше здоровье -<br>
-						это Наш ежедневный выбор!
-					</p>
-				</div>
-			</div>
-		</section>
-		<section id="s-questions" class="s-questions decor">
-			<div class="container">
-				<h2 class="text-center block_title">Возникли вопросы?</h2>
-				<form action="sendmessage.php" id="questions-form" method="post">
-					<div class="d-flex justify-content-between form_block">
-						<label class="name"><input type="text" placeholder="Ваше имя..." name="name"></label>
-						<label class="surname"><input type="text" placeholder="Ваша фамилия..." name="surname"></label>
-						<label class="city"><input type="text" placeholder="Ваш город..." name="city"></label>
-					</div>
-					<div class="d-flex justify-content-between form_block">
-						<label class="phone"><input type="tel" placeholder="Ваш телефон..." name="phone"></label>
-						<label class="email"><input type="email" placeholder="Ваш e-mail..." name="email"></label>
-						<button type="submit" name="button" class="button-main">Получить консультацию</button>
-					</div>
-				</form>
-			</div>
-		</section>
-		<section id="s-results" class="s-results decor decor-2">
-			<div class="container">
-				<h2 class="text-center block_title">Результаты после программы</h2>
-				<div id="results-slider" class="results-slider owl-carousel mx-auto">
-				
-					<div class="slider-image-wrap">
-					
-						<img src="img/res/01.jpg" alt="Фото результатов">
-						
-					</div>
-					<div class="slider-image-wrap">
-						<img src="img/res/02.jpg" alt="Фото результатов">
-					</div>
-					<div class="slider-image-wrap">
-						<img src="img/res/1.jpg" alt="Фото результатов">
-					</div>
-					<div class="slider-image-wrap">
-						<img src="img/res/2.jpg" alt="Фото результатов">
-					</div>
-					<div class="slider-image-wrap">
-						<img src="img/res/3.jpg" alt="Фото результатов">
-					</div>
-					<div class="slider-image-wrap">
-						<img src="img/res/4.jpg" alt="Фото результатов">
-					</div>
-					<div class="slider-image-wrap">
-						<img src="img/res/5.jpg" alt="Фото результатов">
-					</div>
-					<div class="slider-image-wrap">
-						<img src="img/res/6.jpg" alt="Фото результатов">
-					</div>
-					<div class="slider-image-wrap">
-						<img src="img/res/7.jpg" alt="Фото результатов">
-					</div>
-						<div class="slider-image-wrap">
-						<img src="img/res/8.jpg" alt="Фото результатов">
-					</div>
-					<div class="slider-image-wrap">
-						<img src="img/res/9.jpg" alt="Фото результатов">
-					</div>
-					<div class="slider-image-wrap">
-						<img src="img/res/10.jpg" alt="Фото результатов">
-					</div>
-					<div class="slider-image-wrap">
-						<img src="img/res/11.jpg" alt="Фото результатов">
-					</div>
-					<div class="slider-image-wrap">
-						<img src="img/res/12.jpg" alt="Фото результатов">
-					</div>
-					<div class="slider-image-wrap">
-						<img src="img/res/13.jpg" alt="Фото результатов">
-					</div>
-					<div class="slider-image-wrap">
-						<img src="img/res/14.jpg" alt="Фото результатов">
-					</div>
-					<div class="slider-image-wrap">
-						<img src="img/res/15.jpg" alt="Фото результатов">
-					</div>
-					<div class="slider-image-wrap">
-						<img src="img/res/16.jpg" alt="Фото результатов">
-					</div>
-					<div class="slider-image-wrap">
-						<img src="img/res/17.jpg" alt="Фото результатов">
-					</div>
-					<div class="slider-image-wrap">
-						<img src="img/res/18.jpg" alt="Фото результатов">
-					</div>
-					<div class="slider-image-wrap">
-						<img src="img/res/19.jpg" alt="Фото результатов">
-					</div>
-					<div class="slider-image-wrap">
-						<img src="img/res/20.jpg" alt="Фото результатов">
-					</div>
-					<div class="slider-image-wrap">
-						<img src="img/res/21.jpg" alt="Фото результатов">
-					</div>
-					<div class="slider-image-wrap">
-						<img src="img/res/22.jpg" alt="Фото результатов">
-					</div>
-					<div class="slider-image-wrap">
-						<img src="img/res/23.jpg" alt="Фото результатов">
-					</div>
-					<div class="slider-image-wrap">
-						<img src="img/res/24.jpg" alt="Фото результатов">
-					</div>
-					<div class="slider-image-wrap">
-						<img src="img/res/25.jpg" alt="Фото результатов">
-					</div>
-						
-					<div class="slider-image-wrap">
-						<img src="img/res/27.jpg" alt="Фото результатов">
-					</div>
-					<div class="slider-image-wrap">
-						<img src="img/res/28.jpg" alt="Фото результатов">
-					</div>
-					<div class="slider-image-wrap">
-						<img src="img/res/29.jpg" alt="Фото результатов">
-					</div>
-					<div class="slider-image-wrap">
-						<img src="img/res/30.jpg" alt="Фото результатов">
-					</div>
-					<div class="slider-image-wrap">
-						<img src="img/res/31.jpg" alt="Фото результатов">
-					</div>
-					<div class="slider-image-wrap">
-						<img src="img/res/32.jpg" alt="Фото результатов">
-					</div>
-				</div>
-				<div id="results-slider-counter" class="mt-4 text-center">
-					<span id="results-slider-counter-current"></span>
-					<span id="results-slider-counter-count"></span>
-				</div>
-			</div>
-		</section>
-		
-		
-		
-			<section id="s-about2" class="s-about2">
-			<div class="container">
-				<h2 class="text-center my-0 block_title">О проекте</h2>
-				<div class="row ">
-					<div class="col-lg-5 d-flex align-items-center">
-						<div class="embed-responsive embed-responsive-16by9">
-							<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/FrVVLxViYSI" frameborder="0" allowfullscreen></iframe>
-						</div>
-						<!-- <img src="img/about-img.png" alt="О ПРОЕКТЕ" class="img-fluid"> -->
-					</div>
-					<div class="col-lg-6 d-flex flex-column justify-content-center">
-						<div>
-							<h3>Константин Тарнопольский</h3>
-							<p>
-								<b>Цель: <strong>набор массы</strong>.<p>
-								Занятое место: <strong>1 место</strong>.</p></b>
-							</p>
-							<p>
-								«Измени себя» - это не просто оздоровительная программа, <strong>это стиль жизни</strong>.
-								Стиль здоровых и счастливых людей.
-							</p>
-							<p>
-								Участвуя в программе, вы не только решаете свои задачи по здоровью, вы
-								месяц за месяцем восстанавливаете свое здоровье с любого состояния и
-								продолжаете <strong>жить без аптек и врачей</strong> в будущем
-							</p>
-						</div>
-					</div>
-					
-					
-					
-				</div>
-			</div>
-		</section>
-		
-		
-		
-		
-		
-		<section id="s-how-to-start" class="s-how-to-start">
-			<div class="container">
-				<h2 class="text-center block_title">Результаты после программы</h2>
-				<p class="how-to-start-description text-center">Как стать участником проекта «Измени себя»?</p>
-				<div class="row no-gutters d-flex align-items-center">
-					<div class="col-lg-5 col-12 d-flex">
-						<span class="counter">01</span>
-						<h5>Заполнить форму</h5>
-					</div>
-					<div class="col-lg-2 col-12">
-						<div class="how-to-start-icons how-to-start-icons-1 mx-auto"></div>
-					</div>
-					<div class="col-lg-5 col-12 text-center">
-						<a href="#questions-form-popup" data-fancybox class="button-main button-main-how-to">Получить консультацию</a>
-					</div>
-				</div>
-				<div class="row no-gutters d-flex align-items-center">
-					<div class="col-lg-5 col-12 d-flex">
-						<span class="counter">02</span>
-						<h5>Получите личного консультанта</h5>
-					</div>
-					<div class="col-lg-2 col-12">
-						<div class="how-to-start-icons how-to-start-icons-2 mx-auto"></div>
-					</div>
-					<div class="col-lg-5 col-12">
-						<p class="text">После успешной регистрации вы получаете личного консультанта, который будет помогать Вам на каждом этапе проекта «Измени себя»</p>
-					</div>
-				</div>
-				<div class="row no-gutters d-flex align-items-center">
-					<div class="col-lg-5 col-12 d-flex">
-						<span class="counter">03</span>
-						<h5>Изучите ваш личный план действий</h5>
-					</div>
-					<div class="col-lg-2 col-12">
-						<div class="how-to-start-icons how-to-start-icons-3 mx-auto"></div>
-					</div>
-					<div class="col-lg-5 col-12">
-						<p class="text">Специально под Ваши задачи и цели будет разработан план действий, и программа питания, используя которую вы достигните своих целей</p>
-					</div>
-				</div>
-			</div>
-		</section>
-		<section id="s-presents" class="s-presents decor-2">
-			<div class="container text-center">
-				<h2 class="text-center block_title">Внимание призы!</h2>
-				<p class="presents-description mx-auto text-center">Каждый участник проекта участвует в розыгрыше ценных призов для своей новой жизни</p>
-				<div class="presents d-flex justify-content-center align-items-end">
-					<div class="present-place present-place-1">
-						<div class="present-place-icon"></div>
-						<h6 class="present-place-description">300$</h6>
-						<h6 class="present-place-number">2-е место</h6>
-					</div>
-					<div class="present-place present-place-2">
-						<div class="present-place-icon"></div>
-						<h6 class="present-place-description">600$</h6>
-						<h6 class="present-place-number">1-е место</h6>
-					</div>
-					<div class="present-place present-place-3">
-						<div class="present-place-icon"></div>
-						<h6 class="present-place-description">200$</h6>
-						<h6 class="present-place-number">3-е место</h6>
-					</div>
-				</div>
-			</div>
-		</section>
-	</main>
-
-	<footer>
-		<div class="container">
-			<div class="row align-items-center flogo">
-				<div class="col-lg-3 col-12">
-					<div class="f-phones-list-wrap">
-						<!--<span id="f-phones-toggle"></span>
-						 <ul id="f-phones-list">
-							<li><a href="mailto:info@change-yourself.com">info@change-your-self.com</a></li>
-							<li><a href="tel:380983287171">+38 (098) 328 - 71 - 71</a></li> 
-						</ul>-->
-						
-					</div>
-				</div>
-				<div class="col-lg-3 col-12 text-center">
-					<a href="/"><img class="logo1" src="img/logo_new_white.png" alt="Coral Club"></a>
-				</div>
-				<div class="col-lg-3 col-12 text-right social">
-					<a href="https://telegram.org/"><img src="img/telegram.png" alt="Telegram"></a>
-					<a href="https://www.facebook.com/"><img src="img/facebook.png" alt="Facebook"></a>
-				</div>
-			</div>
-			<nav class="f-menu">
-				<ul class="d-flex justify-content-center">
-					<li><a href="#s-head" class="scroll-button">Главная</a></li>
-					<li><a href="#s-about" class="scroll-button">О проекте</a></li>
-					<li><a href="#s-steps" class="scroll-button">Выгоды</a></li>
-					<li><a href="#s-results" class="scroll-button">Результаты</a></li>
-					<li><a href="#s-about2" class="scroll-button">Видео отзывы</a></li>
-					<li><a href="#s-how-to-start" class="scroll-button">Как начать?</a></li>
-					<li><a href="#s-presents" class="scroll-button">Призы</a></li>
-				</ul>
-			</nav>
-			<div class="f-copyright text-center">
-			  "change-your-self.com" является сайтом независимого дистрибьютора coralclub
-			</div>
-		</div>
-	</footer>
+		</footer>
 
 	</div>
 
@@ -474,4 +505,5 @@
 	<script src="js/scripts.js"></script>
 
 </body>
+
 </html>
