@@ -12,7 +12,8 @@
 }
 @media (max-width: 576px) {
   .sf-registration input,
-  .sf-registration select {
+  .sf-registration select,
+  .sf-registration textarea {
     font-size: 50px;
     margin-bottom: 35px;
     border: 1px solid #8373cf;
@@ -20,5 +21,8 @@
   }
   .sf-registration input {
     padding: 55px;
+  }
+  small {
+    font-size: 45px;
   }
 }
