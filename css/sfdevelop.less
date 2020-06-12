@@ -1,23 +1,35 @@
 .sf-registration {
-	input {
+
+	input,
+	select,
+	textarea {
 		width: 100%;
 		padding: 15px;
+		border: 1px solid #8373cf;
 
+		border-radius: 0px;
+
+	}
+
+	.custom-file-input {
+		padding: 15px !important;
 	}
 }
 
 @media (max-width: 576px) {
 	.sf-registration {
-		input {
+
+		input,
+		select {
 			font-size: 50px;
 			margin-bottom: 35px;
-			border: 1px solid blue;
+			border: 1px solid #8373cf;
 			height: 80px;
 
 		}
 	}
 
 	.sf-registration input {
-		padding: 45px;
+		padding: 55px;
 	}
 }

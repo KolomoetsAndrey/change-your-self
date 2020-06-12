@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+
+	<meta charset="utf-8">
+
+	<title>Кабинет пользователя</title>
+	<meta name="description" content="">
+
+	<link rel="shortcut icon" href="img/favicon/favicon.png" type="image/x-icon">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width">
+	<style>
+		.loader {
+			position: fixed;
+			left: 0;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			background: #222222;
+			z-index: 999
+		}
+
+		.loader .loader_inner {
+			position: absolute;
+			left: 0;
+			top: 0;
+			z-index: 999;
+			width: 100%;
+			height: 100%;
+			overflow: visible;
+			background: #fff
+		}
+
+	</style>
+
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="libs/owlcarousel/owl.carousel.min.css">
+	<link rel="stylesheet" href="libs/fancybox3/jquery.fancybox.min.css">
+
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/sfdevelop.css">
+
+	<!-- Global Site Tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-106555581-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+
+		function gtag() {
+			dataLayer.push(arguments)
+		};
+		gtag('js', new Date());
+
+		gtag('config', 'UA-106555581-1');
+
+	</script>
+
+
+</head>
+
+<body>
+
+	<div class="site">
+
+
+		<div class="loader">
+			<div class="loader_inner"></div>
+		</div>
+
+		<header>
+			<nav class="container">
+				<div class="row align-items-center">
+					<div class="col d-flex">
+						<button type="button" name="button" id="menu-toggler" onclick="openNav()"><img src="img/menu-button.png" alt="МЕНЮ"></button>
+					</div>
+					<div class="col text-center">
+						<a href="/">
+							<img class="logo1" src="img/logo_new_white.png" alt="Coral Club">
+						</a>
+					</div>
+					<div class="col text-right">
+						<!--<a href="#questions-form-popup" data-fancybox class="button-transparent">Заказать звонок</a>-->
+					</div>
+					<div id="mySidepanel" class="sidepanel">
+						<ul class="themenu">
+							<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+							<li><a href="#s-head" class="scroll-button">Главная</a></li>
+							<li><a href="#s-about" class="scroll-button">О проекте</a></li>
+							<li><a href="#s-steps" class="scroll-button">Выгоды</a></li>
+							<li><a href="#s-results" class="scroll-button">Результаты</a></li>
+							<li><a href="#s-about2" class="scroll-button">Видео отзывы</a></li>
+							<li><a href="#s-how-to-start" class="scroll-button">Как начать?</a></li>
+							<li><a href="#s-presents" class="scroll-button">Призы</a></li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+		</header>
+		<main>
+			<section id="s-head" class="s-head decor">
+				<div class="container d-flex flex-column justify-content-center align-items-center">
+					<!--					<h2 class="h1-subtitle">МЕЖДУНАРОДНЫЙ ПРОЕКТ</h2>-->
+					<h1>Кабинет пользователя</h1>
+					<!--					<h2 class="h1-subtitle-2">Ваш реальный шанс стать лучше уже сегодня!</h2>-->
+					<!--					<a href="#s-about" class="button-main button-main-head scroll-button">Узнать больше</a>-->
+					<div class="scroll-icon mb-0 mt-auto"></div>
+				</div>
+			</section>
+
+			<section id="s-questions" class="s-questions decor sf-registration">
+				<div class="container">
+					<h2 class="text-center block_title">Кабинет пользователя</h2>
+
+					<div class="d-flex justify-content-center flex-wrap flex-column align-items-center">
+						<div class="col-lg-8 mb-3">
+							<small class="mb-2 d-block">ФИО</small>
+							<input disabled class="sf-input" type="text" placeholder="ФИО " name="name">
+						</div>
+						<div class="col-lg-8 mb-3">
+							<small class="mb-2 d-block">Номер члена клуба</small>
+							<input disabled class="sf-input" type="text" placeholder="Номер члена клуба " name="name">
+						</div>
+						<div class="col-lg-8 mb-3">
+							<small class="mb-2 d-block">Город проживания</small>
+							<input disabled class="sf-input" type="text" placeholder="Город проживания " name="name">
+						</div>
+						<div class="col-lg-8 mb-3">
+							<small class="mb-2 d-block">Фамилия Имя рекомендателя</small>
+							<input disabled class="sf-input" type="text" placeholder="Фамилия Имя рекомендателя" name="name">
+						</div>
+						<div class="col-lg-8 mb-3">
+							<small class="mb-2 d-block">Дата рождения</small>
+							<input disabled class="sf-input" type="text" placeholder="Дата рождения" name="name">
+						</div>
+						<div class="col-lg-8 mb-3">
+							<small class="mb-2 d-block">Email</small>
+							<input disabled class="sf-input" type="text" placeholder="Email" name="name">
+						</div>
+						<div class="col-lg-8 mb-3">
+							<small class="mb-2 d-block">Телефон</small>
+							<input disabled class="sf-input" type="text" placeholder="Телефон" name="name">
+						</div>
+						<div class="col-lg-8 mb-3">
+							<small class="mb-2 d-block">Цель</small>
+							<input disabled class="sf-input" type="text" placeholder="Набор веса" name="name">
+						</div>
+						<div class="col-lg-8 mb-3">
+							<small class="mb-2 d-block">Kомментарий</small>
+							<textarea disabled name="" id="" cols="30" rows="10" placeholder="Kомментарий"></textarea>
+						</div>
+					</div>
+					<hr>
+					<div>
+						<h2 class="text-center my-0 block_title">Начальное фото</h2>
+						<form action="" id="questions-form" method="post">
+							<div class="input-group my-3">
+								<div class="custom-file">
+									<input type="file" class="custom-file-input" id="inputGroupFile04" aria-describedby="inputGroupFileAddon04">
+									<small class="custom-file-label" for="inputGroupFile04">Фото</small>
+								</div>
+							</div>
+							<div class="input-group my-3">
+								<div class="custom-file">
+									<input type="file" class="custom-file-input" id="inputGroupFile04" aria-describedby="inputGroupFileAddon04">
+									<small class="custom-file-label" for="inputGroupFile04">Фото анфас</small>
+								</div>
+							</div>
+							<div class="input-group my-3">
+								<div class="custom-file">
+									<input type="file" class="custom-file-input" id="inputGroupFile04" aria-describedby="inputGroupFileAddon04">
+									<small class="custom-file-label" for="inputGroupFile04">Фото профиль</small>
+								</div>
+							</div>
+							<small>Дата загрузки: 01/01/21</small>
+							<div class="images row">
+
+								<div class="col-lg-4"><img src="img/01.jpg" alt="" class="w-100 my-3"></div>
+								<div class="col-lg-4"><img src="img/02.jpg" alt="" class="w-100 my-3"></div>
+								<div class="col-lg-4"><img src="img/03.jpg" alt="" class="w-100 my-3"></div>
+							</div>
+							<div class="text-center">
+								<a href="" class="button-main button-main-head scroll-button">Загрузить</a>
+							</div>
+						</form>
+					</div>
+					<div>
+						<h2 class="text-center my-0 block_title">Фото спустя 30 дней</h2>
+						<form action="" id="questions-form" method="post">
+							<div class="input-group my-3">
+								<div class="custom-file">
+									<input type="file" class="custom-file-input" id="inputGroupFile04" aria-describedby="inputGroupFileAddon04">
+									<small class="custom-file-label" for="inputGroupFile04">Фото</small>
+								</div>
+							</div>
+							<div class="input-group my-3">
+								<div class="custom-file">
+									<input type="file" class="custom-file-input" id="inputGroupFile04" aria-describedby="inputGroupFileAddon04">
+									<small class="custom-file-label" for="inputGroupFile04">Фото анфас</small>
+								</div>
+							</div>
+							<div class="input-group my-3">
+								<div class="custom-file">
+									<input type="file" class="custom-file-input" id="inputGroupFile04" aria-describedby="inputGroupFileAddon04">
+									<small class="custom-file-label" for="inputGroupFile04">Фото профиль</small>
+								</div>
+							</div>
+							<small>Дата загрузки: 01/01/21</small>
+							<div class="images row">
+
+								<div class="col-lg-4"><img src="img/01.jpg" alt="" class="w-100 my-3"></div>
+								<div class="col-lg-4"><img src="img/02.jpg" alt="" class="w-100 my-3"></div>
+								<div class="col-lg-4"><img src="img/03.jpg" alt="" class="w-100 my-3"></div>
+							</div>
+							<div class="text-center">
+								<a href="" class="button-main button-main-head scroll-button">Загрузить</a>
+							</div>
+						</form>
+					</div>
+					<div>
+						<h2 class="text-center my-0 block_title">Фото спустя 60 дней</h2>
+						<form action="" id="questions-form" method="post">
+							<div class="input-group my-3">
+								<div class="custom-file">
+									<input type="file" class="custom-file-input" id="inputGroupFile04" aria-describedby="inputGroupFileAddon04">
+									<small class="custom-file-label" for="inputGroupFile04">Фото</small>
+								</div>
+							</div>
+							<div class="input-group my-3">
+								<div class="custom-file">
+									<input type="file" class="custom-file-input" id="inputGroupFile04" aria-describedby="inputGroupFileAddon04">
+									<small class="custom-file-label" for="inputGroupFile04">Фото анфас</small>
+								</div>
+							</div>
+							<div class="input-group my-3">
+								<div class="custom-file">
+									<input type="file" class="custom-file-input" id="inputGroupFile04" aria-describedby="inputGroupFileAddon04">
+									<small class="custom-file-label" for="inputGroupFile04">Фото профиль</small>
+								</div>
+							</div>
+							<small>Дата загрузки: 01/01/21</small>
+							<div class="images row">
+
+								<div class="col-lg-4"><img src="img/01.jpg" alt="" class="w-100 my-3"></div>
+								<div class="col-lg-4"><img src="img/02.jpg" alt="" class="w-100 my-3"></div>
+								<div class="col-lg-4"><img src="img/03.jpg" alt="" class="w-100 my-3"></div>
+							</div>
+							<div class="text-center">
+								<a href="" class="button-main button-main-head scroll-button">Загрузить</a>
+							</div>
+						</form>
+					</div>
+				</div>
+			</section>
+
+
+		</main>
+
+		<footer>
+			<div class="container">
+				<div class="row align-items-center flogo">
+					<div class="col-lg-3 col-12">
+						<div class="f-phones-list-wrap">
+							<!--<span id="f-phones-toggle"></span>
+						 <ul id="f-phones-list">
+							<li><a href="mailto:info@change-yourself.com">info@change-your-self.com</a></li>
+							<li><a href="tel:380983287171">+38 (098) 328 - 71 - 71</a></li> 
+						</ul>-->
+
+						</div>
+					</div>
+					<div class="col-lg-3 col-12 text-center">
+						<a href="/"><img class="logo1" src="img/logo_new_white.png" alt="Coral Club"></a>
+					</div>
+					<div class="col-lg-3 col-12 text-right social">
+						<a href="https://telegram.org/"><img src="img/telegram.png" alt="Telegram"></a>
+						<a href="https://www.facebook.com/"><img src="img/facebook.png" alt="Facebook"></a>
+					</div>
+				</div>
+				<nav class="f-menu">
+					<ul class="d-flex justify-content-center">
+						<li><a href="#s-head" class="scroll-button">Главная</a></li>
+						<li><a href="#s-about" class="scroll-button">О проекте</a></li>
+						<li><a href="#s-steps" class="scroll-button">Выгоды</a></li>
+						<li><a href="#s-results" class="scroll-button">Результаты</a></li>
+						<li><a href="#s-about2" class="scroll-button">Видео отзывы</a></li>
+						<li><a href="#s-how-to-start" class="scroll-button">Как начать?</a></li>
+						<li><a href="#s-presents" class="scroll-button">Призы</a></li>
+					</ul>
+				</nav>
+				<div class="f-copyright text-center">
+					"change-your-self.com" является сайтом независимого дистрибьютора coralclub
+				</div>
+			</div>
+		</footer>
+
+	</div>
+
+	<div class="hidden">
+		<form id="questions-form-popup" method="post">
+			<label class="name"><input type="text" placeholder="Ваше имя..." name="name"></label>
+			<label class="surname"><input type="text" placeholder="Ваша фамилия..." name="surname"></label>
+			<label class="city"><input type="text" placeholder="Ваш город..." name="city"></label>
+			<label class="phone"><input type="tel" placeholder="Ваш телефон..." name="phone"></label>
+			<label class="email"><input type="email" placeholder="Ваш e-mail..." name="email"></label>
+			<button type="submit" name="button" class="button-main">Отправить</button>
+		</form>
+	</div>
+
+	<script src="libs/jquery/jquery-3.2.1.min.js"></script>
+	<script src="libs/jquery/jquery.validate.min.js"></script>
+	<script src="libs/jquery.maskedinput.min.js"></script>
+	<script src="libs/owlcarousel/owl.carousel.min.js"></script>
+	<script src="libs/fancybox3/jquery.fancybox.min.js"></script>
+
+	<script src="js/scripts.js"></script>
+
+</body>
+
+</html>
