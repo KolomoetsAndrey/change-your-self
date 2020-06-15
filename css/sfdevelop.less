@@ -1,5 +1,73 @@
-.sf-registration {
+.p-80 {
+	padding-top: 80px;
+	padding-bottom: 80px;
+	display: block;
+}
 
+.sf-head {
+	background-image: url(../img/steps-bg.jpg) !important;
+	height: auto !important;
+
+	.sf_title {
+		text-transform: uppercase;
+		font-size: 3rem;
+		font-weight: bold;
+		color: #fff;
+		width: max-content;
+		margin: 0 auto;
+		margin-top: 80px !important;
+		margin-bottom: 8px;
+	}
+
+	color: #fff;
+
+	.text {
+		text-align: left;
+
+		p {
+			font-size: 18px;
+			line-height: 1.2;
+		}
+	}
+
+	.container {
+		height: auto !important;
+		max-height: 1000px !important;
+		padding-bottom: 80px;
+	}
+
+	.order {
+		small {
+			display: block;
+			text-align: center !important;
+		}
+	}
+}
+
+.sf-registration {
+	.c-white {
+		color: white !important;
+	}
+
+	.text {
+		text-align: left;
+
+		p {
+			font-size: 18px;
+			line-height: 1.2;
+		}
+	}
+
+	.h-fox {
+		height: 420px !important;
+	}
+
+	.brown {
+		background-color: #ba6262;
+		color: #fff;
+		font-size: 24px;
+		line-height: 1.2;
+	}
 
 	input,
 	select,
@@ -49,4 +117,29 @@
 	font-size: 18px;
 	padding-left: 20px;
 	padding-right: 20px;
+}
+
+@media (max-width: 992px) {
+	.sf-registration .text p {
+		font-size: 30px !important;
+	}
+
+	.sf-registration small {
+		margin-top: 20px;
+		font-size: 24px;
+	}
+
+	.sf-registration .brown {
+		font-size: 30px;
+	}
+
+	.sf-registration {
+
+		input,
+		select,
+		textarea {
+			font-size: 30px !important;
+		}
+
+	}
 }
