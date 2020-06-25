@@ -48,6 +48,25 @@ $(document).ready(function() {
         }
     });
 
+    $('#s-about-slider').owlCarousel({
+        items: 1,
+        adaptiveHeight: true,
+        dots: false,
+        nav: false,
+        autoplay: true,
+        smartSpeed: 1000
+    });
+
+    $('#s-about2-slider').owlCarousel({
+        items: 1,
+        adaptiveHeight: true,
+        dots: false,
+        nav: false,
+        autoplay: true,
+        smartSpeed: 1000
+    });
+
+
     $('#f-phones-list').find('li:not(:first-child)').slideUp();
 
     $('#f-phones-toggle').click(function() {
@@ -194,63 +213,63 @@ $(document).ready(function() {
         }
     });
     
-    $("#questions-form-popup").validate({
-        rules: {
-            name: {
-                    required: true
-                },
-                surname: {
-                    required: true
-                },
-                city: {
-                    required: false
-                },
-                phone: {
-                    required: true
-                },
-                email: {
-                    email: true
-                }
+    // $("#questions-form-popup").validate({
+    //     rules: {
+    //         name: {
+    //                 required: true
+    //             },
+    //             surname: {
+    //                 required: true
+    //             },
+    //             city: {
+    //                 required: false
+    //             },
+    //             phone: {
+    //                 required: true
+    //             },
+    //             email: {
+    //                 email: true
+    //             }
 
-        },
-        messages: {
-            name: '',
-            surname: '',
-            city: '',
-            phone: '',
-            email: ''
-        },
-        errorPlacement: function(error, element) {},
-        submitHandler: function(form) {
-            var forma = $(form);
+    //     },
+    //     messages: {
+    //         name: '',
+    //         surname: '',
+    //         city: '',
+    //         phone: '',
+    //         email: ''
+    //     },
+    //     errorPlacement: function(error, element) {},
+    //     submitHandler: function(form) {
+    //         var forma = $(form);
 
-            $.ajax({
-                type: 'POST',
-                url: '/sendmessage.php',
-                data: forma.serialize(),
-                success: function(data) { $('#form-1').find('input[type="text"]').val('');
-                    if (data == "true") {
+    //         $.ajax({
+    //             type: 'POST',
+    //             url: '/sendmessage.php',
+    //             data: forma.serialize(),
+    //             success: function(data) { $('#form-1').find('input[type="text"]').val('');
+    //                 if (data == "true") {
                         
-                        $(form).html('<div class="thenks">Спасибо за заявку. В ближайшее время с вами свяжутся</div>');
-                        setTimeout("$.fancybox.close()", 4000);
-                    }
-                }
-            });
+    //                     $(form).html('<div class="thenks">Спасибо за заявку. В ближайшее время с вами свяжутся</div>');
+    //                     setTimeout("$.fancybox.close()", 4000);
+    //                 }
+    //             }
+    //         });
             
 
 
 
-        },
-        success: function() {
+    //     },
+    //     success: function() {
 
-        },
-        highlight: function(element, errorClass) {
-            $(element).addClass('error');
-        },
-        unhighlight: function(element, errorClass, validClass) {
-            $(element).removeClass('error');
-        }
-    });
+    //     },
+    //     highlight: function(element, errorClass) {
+    //         $(element).addClass('error');
+    //     },
+    //     unhighlight: function(element, errorClass, validClass) {
+    //         $(element).removeClass('error');
+    //     }
+    // });
 
     $('input[name="phone"]').mask('+38 (099) 999-99-99');
 
