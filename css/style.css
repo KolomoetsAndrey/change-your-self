@@ -338,18 +338,6 @@ section:not(.s-head) {
   padding-top: 100px;
   padding-bottom: 10px !important;  }
   
-  .s-about-display {
-    display: flex;
-  }
-  .s-about-slider {
-    display: none;
-  }
-  .s-about2-display {
-    display: flex;
-  }
-  .s-about2-slider {
-    display: none;
-  }
 	
 	
 	.s-about2 h3 {
@@ -1026,6 +1014,19 @@ footer {
 .mymodal p {
   font-size: 1rem;
 }
+
+.s-about-display {
+  display: flex;
+}
+.s-about-slider {
+  display: none !important;
+}
+.s-about2-display {
+  display: flex;
+}
+.s-about2-slider {
+  display: none !important;
+}
 /*==========  Desktop First Method  ========== */
 /* Large Devices, Wide Screens */
 @media (max-width: 1200px) {
@@ -1071,13 +1072,13 @@ footer {
       display: none !important;
     }
     .s-about-slider {
-      display: block;
+      display: block !important;
     }
     .s-about2-display {
       display: none !important;
     }
     .s-about2-slider {
-      display: block;
+      display: block !important;
     }
     .slider-image-wrap {
       padding: 40px;
