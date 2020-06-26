@@ -1008,25 +1008,19 @@ footer {
 }
 
 .mymodal h3 {
-  font-size: 2rem;
+  font-size: 1.5rem;
+  line-height: 2rem;
 }
 
 .mymodal p {
-  font-size: 1rem;
+  font-size: 0.8rem;
+  line-height: 1rem;
 }
 
-.s-about-display {
-  display: flex;
+.mymodal .button-main {
+  border: none;
 }
-.s-about-slider {
-  display: none !important;
-}
-.s-about2-display {
-  display: flex;
-}
-.s-about2-slider {
-  display: none !important;
-}
+
 /*==========  Desktop First Method  ========== */
 /* Large Devices, Wide Screens */
 @media (max-width: 1200px) {
@@ -1068,18 +1062,7 @@ footer {
       font-size: 2.5rem;
       padding-bottom: 15px;
     }
-    .s-about-display {
-      display: none !important;
-    }
-    .s-about-slider {
-      display: block !important;
-    }
-    .s-about2-display {
-      display: none !important;
-    }
-    .s-about2-slider {
-      display: block !important;
-    }
+
     .slider-image-wrap {
       padding: 40px;
     }
